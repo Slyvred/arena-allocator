@@ -6,7 +6,7 @@
 #include <ctime>
 #include <utility>
 
-enum LOG_LEVEL{
+enum LOG_LEVEL {
   DEBUG,
   INFO,
   WARNING,

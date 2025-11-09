@@ -1,5 +1,6 @@
 #pragma once
 
+#include <cassert>
 #include <cstdio>
 #include <memory>
 #include <list>
@@ -79,7 +80,7 @@ public:
     T* make(Args&&... args) {
         static_assert(std::is_trivially_destructible_v<T>, "Arena<T>::make() requires trivially destructible types");
         void* ptr = this->allocate(sizeof(T), alignof(T));
-        logger.log(LOG_LEVEL::DEBUG, "Allocated new object of size %lu and align %lu", sizeof(T), alignof(T));
+        // logger.log(LOG_LEVEL::DEBUG, "Allocated new object of size %lu and align %lu", sizeof(T), alignof(T));
         return new (ptr) T(std::forward<Args>(args)...);
     }
 };

@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 4.1)
+project(arena)
+set(CMAKE_CXX_STANDARD 23)
+set(SOURCE_FILES src/main.cpp src/arena.h src/logger.h)
+add_executable(arena ${SOURCE_FILES})

@@ -15,11 +15,11 @@ enum LOG_LEVEL{
 
 inline std::ostream& operator<<(std::ostream& os, const LOG_LEVEL& level) {
     switch (level) {
-    case DEBUG:   os << "DEBUG"; break;
-    case INFO:    os << "INFO"; break;
-    case WARNING: os << "WARNING"; break;
-    case ERROR:   os << "ERROR"; break;
-    default:      os << "UNKNOWN"; break;
+        case DEBUG:   os << "DEBUG"; break;
+        case INFO:    os << "INFO"; break;
+        case WARNING: os << "WARNING"; break;
+        case ERROR:   os << "ERROR"; break;
+        default:      os << "UNKNOWN"; break;
     }
     return os;
 }

@@ -7,20 +7,19 @@
 
 /* This file is contains a few examples on how to use the Arena */
 
-struct Point2D{
+struct Point2D {
     int x;
     int y;
 
     Point2D(int x, int y): x(x), y(y) {}
 };
 
-std::ostream& operator<<(std::ostream& os, const Point2D& pt)
-{
+std::ostream& operator<<(std::ostream& os, const Point2D& pt) {
     os << "Point2D{\n x: " << pt.x << ",\n y: " << pt.y << "\n}";
     return os;
 }
 
-struct Point3D{
+struct Point3D {
     double x;
     double y;
     double z;

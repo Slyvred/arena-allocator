@@ -1,10 +1,9 @@
 #pragma once
 
 #include <cstdio>
-#include <limits>
 #include <memory>
 #include <list>
-#include "logger.h"
+#include "logger.hpp"
 
 /* This file contains the arena implementation, it uses std::list to store the data and supports automatic expansion */
 

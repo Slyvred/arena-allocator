@@ -1,9 +1,9 @@
-#include "arena_list.h"
+#include "arena_list.hpp"
 #include <cstdio>
 #include <iostream>
 #include <unordered_map>
 #include <vector>
-#include "logger.h"
+#include "logger.hpp"
 
 /* This file is contains a few examples on how to use the Arena */
 

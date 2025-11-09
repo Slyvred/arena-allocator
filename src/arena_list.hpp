@@ -32,7 +32,6 @@ public:
         for (auto& buffer: this->buffers){
             ::operator delete(buffer.data);
         }
-        this->buffers.clear();
         logger.log(LOG_LEVEL::DEBUG, "Destroyed Arena !");
     }
 

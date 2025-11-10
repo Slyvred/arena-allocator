@@ -66,6 +66,7 @@ public:
     void setFormat(const char* format) {
         this->format_ = format;
     }
+
 private:
     void printPrefix() {
         time_t timestamp = time(NULL);

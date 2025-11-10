@@ -8,9 +8,7 @@
 /* This file is contains a few examples on how to use the Arena */
 
 struct Point2D {
-    int x;
-    int y;
-
+    int x, y;
     Point2D(int x, int y): x(x), y(y) {}
 };
 
@@ -20,10 +18,7 @@ std::ostream& operator<<(std::ostream& os, const Point2D& pt) {
 }
 
 struct Point3D {
-    double x;
-    double y;
-    double z;
-
+    double x, y, z;
     Point3D(double x, double y, double z): x(x), y(y), z(z) {}
 };
 

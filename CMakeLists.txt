@@ -12,9 +12,6 @@ set(SOURCE_FILES
 
 add_executable(arena ${SOURCE_FILES})
 
-# ----------------------------
-# Build Type / Release Settings
-# ----------------------------
 # Default to Release if not specified
 if(NOT CMAKE_BUILD_TYPE)
     set(CMAKE_BUILD_TYPE Release CACHE STRING

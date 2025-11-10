@@ -1,5 +1,6 @@
 .git/
 .zed/
+.cache/
 build/
 CMakeFiles/
 CMakeCache.txt

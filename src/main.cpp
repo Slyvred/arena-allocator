@@ -27,7 +27,7 @@ struct Point3D {
     Point3D(double x, double y, double z): x(x), y(y), z(z) {}
 };
 
-Logger logger = Logger(LOG_LEVEL::DEBUG, "%m/%d/%y %H:%M:%S");
+Logger logger = Logger(Logger::LogLevel::DEBUG, "%m/%d/%y %H:%M:%S");
 
 int main(int argc, char** argv) {
     Arena arena = Arena(8);
